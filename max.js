@@ -2,4 +2,9 @@ const _ = require('lodash');
 
 const getMaxFromArray = (arr) => _.max(arr);
 
-module.exports = getMaxFromArray;
+const amIFat = (weight) => weight > 99 ? "yes!" : "no!";
+
+module.exports = {
+  getMaxFromArray,
+  amIFat
+};
